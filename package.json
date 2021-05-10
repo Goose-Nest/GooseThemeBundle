@@ -1,0 +1,20 @@
+{
+  "name": "goosethemebundle",
+  "version": "1.0.0",
+  "description": "Bundles GooseNest theme standard into themes for mods to handle (PC, BD, more in future).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Goose-Nest/GooseThemeBundle.git"
+  },
+  "author": "GooseNest",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Goose-Nest/GooseThemeBundle/issues"
+  },
+  "homepage": "https://github.com/Goose-Nest/GooseThemeBundle#readme",
+  "type": "module"
+}
