@@ -4,6 +4,7 @@ import { join } from 'path';
 import pc from './mods/pc.js';
 import bd from './mods/bd.js';
 import readme from './doc/readme.js';
+import license from './doc/license.js';
 
 const cwd = process.cwd();
 
@@ -13,6 +14,6 @@ const manifest = (await import(manifestPath)).default;
 const gitConfig = readFileSync(join(cwd, '.git', 'config'), 'utf8');
 const repo = gitConfig.match(/url = git@github.com:(.*).git/)[1];
 
-for (const func of [ pc, bd, readme ]) {
+for (const func of [ pc, bd, readme, license ]) {
   func(cwd, manifest, repo);
 }
