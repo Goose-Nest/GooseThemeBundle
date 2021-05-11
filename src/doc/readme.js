@@ -8,8 +8,9 @@ ${manifest.description}
 
 ## Mods Supported
 
-- [Powercord](https://powercord.dev)
-- [BetterDiscord](https://betterdiscord.app)`;
+- Powercord
+- BetterDiscord
+- Vizality
 
   writeFileSync(join(cwd, `README.md`), readme);
 };
