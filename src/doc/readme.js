@@ -10,7 +10,7 @@ ${manifest.description}
 
 - Powercord
 - BetterDiscord
-- Vizality
+- Vizality`;
 
   writeFileSync(join(cwd, `README.md`), readme);
 };
