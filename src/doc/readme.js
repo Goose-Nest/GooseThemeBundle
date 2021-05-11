@@ -10,7 +10,11 @@ ${manifest.description}
 
 - Powercord
 - BetterDiscord
-- Vizality`;
+- Vizality
+
+## Screenshots
+
+${manifest.screenshots.map((x) => `![Screenshot](${x})`).join('\n')}`;
 
   writeFileSync(join(cwd, `README.md`), readme);
 };
