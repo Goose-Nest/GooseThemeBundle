@@ -14,5 +14,5 @@ export default (cwd, manifest, repo) => {
 
 @import url('https://${repoSplit[0]}.github.io/${repoSplit[1]}/src/main.css');`
 
-  writeFileSync(join(cwd, `${manifest.name.replace(' ', '')}.theme.css`), css);
+  writeFileSync(join(cwd, `${manifest.name.replaceAll(' ', '')}.theme.css`), css);
 };
