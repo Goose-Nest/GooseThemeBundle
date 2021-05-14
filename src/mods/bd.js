@@ -1,8 +1,13 @@
 import { writeFileSync } from 'fs';
 import { join } from 'path';
 
+import sass from 'sass';
+
 export default (cwd, manifest, repo) => {
   const repoSplit = repo.split('/');
+
+  const compiled = (sass.renderSync({ file: 'src/main.scss' })).css;
+  writeFileSync('compiled.css', compiled);
 
   const css = `/**
   * @name ${manifest.name}
@@ -12,7 +17,7 @@ export default (cwd, manifest, repo) => {
   * @version ${manifest.version}
 */
 
-@import url('https://${repoSplit[0]}.github.io/${repoSplit[1]}/src/main.css');`
+@import url('https://${repoSplit[0]}.github.io/${repoSplit[1]}/compiled.css');`
 
   writeFileSync(join(cwd, `${manifest.name.replaceAll(' ', '')}.theme.css`), css);
 };

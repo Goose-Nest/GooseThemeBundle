@@ -16,5 +16,8 @@
     "url": "https://github.com/Goose-Nest/GooseThemeBundle/issues"
   },
   "homepage": "https://github.com/Goose-Nest/GooseThemeBundle#readme",
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "sass": "^1.32.13"
+  }
 }

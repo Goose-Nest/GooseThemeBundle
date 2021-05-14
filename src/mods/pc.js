@@ -10,7 +10,7 @@ export default (cwd, manifest, repo) => {
     author: 'GooseNest',
     license: 'MIT',
 
-    theme: `src/main.css`
+    theme: `src/main.scss`
   };
 
   writeFileSync(join(cwd, 'powercord_manifest.json'), JSON.stringify(pcManifest, null, 2));
