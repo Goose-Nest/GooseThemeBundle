@@ -7,7 +7,7 @@ export default (cwd, manifest, repo) => {
 ${manifest.description}
 
 <details>
-<summary>## Mods Supported</summary>
+## <summary>Mods Supported</summary>
 <br>
 
 - GooseMod
@@ -17,15 +17,16 @@ ${manifest.description}
 </details>
 
 <details>
-<summary>## Screenshots</summary>
+## <summary>Screenshots</summary>
 <br>
 
 ${manifest.screenshots.map((x) => `![Screenshot](${x})`).join('\n')}
 </details>
 
 <details>
-<summary>## Installation</summary>
+## <summary>Installation</summary>
 <br>
+
 ### Powercord & Vizality
 1. In Discord's settings, go to Themes > Open CMD / Powershell / Terminal / Gitbash
 2. Clone the theme via: \`\`\`
