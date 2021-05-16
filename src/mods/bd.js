@@ -12,6 +12,7 @@ export default (cwd, manifest, repo) => {
   const css = `/**
   * @name ${manifest.name}
   * @author GooseNest
+  * @donate https://github.com/sponsors/CanadaHonk
   * @description ${manifest.description}
   * @invite neMncS2
   * @version ${manifest.version}
