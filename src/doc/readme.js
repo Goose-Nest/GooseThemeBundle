@@ -9,7 +9,7 @@ ${manifest.description}
 <details>
 <summary><strong>Screenshots</strong></summary>
 
-${manifest.screenshots.map((x) => `![Screenshot](${x})`).join('\n')}
+${manifest.screenshots.map((x) => `### ${x[0]}\n![Screenshot: ${x[0]}](${x[1]})`).join('\n')}
 </details>
 
 <details>
