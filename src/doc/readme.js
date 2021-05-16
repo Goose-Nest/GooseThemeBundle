@@ -22,16 +22,16 @@ ${manifest.screenshots.map((x) => `![Screenshot](${x})`).join('\n')}
 </details>
 
 <details>
-<summary><strong>Installation</strong?</summary>
+<summary><strong>Installation</strong></summary>
 
 ### Powercord & Vizality
 1. In Discord's settings, go to Themes > Open CMD / Powershell / Terminal / Gitbash
 2. Clone the theme via: \`git clone https://github.com/${repo}\`
 
-## BetterDiscord
+### BetterDiscord
 Download [the theme.css file](https://raw.githubusercontent.com/${repo}/main/${manifest.name.replaceAll(' ', '')}.theme.css) to your BD themes directory.
 
-## GooseMod
+### GooseMod
 Use the built-in store in settings to search and install.
 </details>`;
 
