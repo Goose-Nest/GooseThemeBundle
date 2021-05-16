@@ -7,15 +7,6 @@ export default (cwd, manifest, repo) => {
 ${manifest.description}
 
 <details>
-<summary><strong>Mods Supported</strong></summary>
-
-- GooseMod
-- Powercord
-- BetterDiscord
-- Vizality
-</details>
-
-<details>
 <summary><strong>Screenshots</strong></summary>
 
 ${manifest.screenshots.map((x) => `![Screenshot](${x})`).join('\n')}
