@@ -7,8 +7,7 @@ export default (cwd, manifest, repo) => {
 ${manifest.description}
 
 <details>
-<summary><h2>Mods Supported</h2></summary>
-<br>
+<summary><strong>Mods Supported</strong></summary>
 
 - GooseMod
 - Powercord
@@ -17,27 +16,23 @@ ${manifest.description}
 </details>
 
 <details>
-<summary>Screenshots</summary>
-<br>
+<summary><strong>Screenshots</strong></summary>
 
 ${manifest.screenshots.map((x) => `![Screenshot](${x})`).join('\n')}
 </details>
 
 <details>
-<summary>Installation</summary>
-<br>
+<summary><strong>Installation</strong?</summary>
 
 ### Powercord & Vizality
 1. In Discord's settings, go to Themes > Open CMD / Powershell / Terminal / Gitbash
-2. Clone the theme via: \`\`\`
-git clone https://github.com/${repo}
-\`\`\`
+2. Clone the theme via: \`git clone https://github.com/${repo}\`
 
 ## BetterDiscord
-1. Download [the theme.css file](https://raw.githubusercontent.com/${repo}/main/${manifest.name.replaceAll(' ', '')}.theme.css) to your BD themes directory
+Download [the theme.css file](https://raw.githubusercontent.com/${repo}/main/${manifest.name.replaceAll(' ', '')}.theme.css) to your BD themes directory.
 
 ## GooseMod
-1. Use the built-in store in settings to search and install
+Use the built-in store in settings to search and install.
 </details>`;
 
   writeFileSync(join(cwd, `README.md`), readme);
