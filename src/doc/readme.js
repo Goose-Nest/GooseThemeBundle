@@ -7,7 +7,7 @@ export default (cwd, manifest, repo) => {
 ${manifest.description}
 
 <details>
-## <summary>Mods Supported</summary>
+<summary><h2>Mods Supported</h2></summary>
 <br>
 
 - GooseMod
@@ -17,14 +17,14 @@ ${manifest.description}
 </details>
 
 <details>
-## <summary>Screenshots</summary>
+<summary>Screenshots</summary>
 <br>
 
 ${manifest.screenshots.map((x) => `![Screenshot](${x})`).join('\n')}
 </details>
 
 <details>
-## <summary>Installation</summary>
+<summary>Installation</summary>
 <br>
 
 ### Powercord & Vizality
